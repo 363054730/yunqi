@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>会员卡</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.4/jquery.mobile-1.4.4.css"/>
+<script src="jquery-1.11.1.js"></script>
+<script src="jquery.mobile-1.4.4/jquery.mobile-1.4.4.js"></script>
+
+<script>
+  /*$(function() {
+		//弹出付款
+        $("#paybtn").tap(function(){
+          $.mobile.changePage("#page_pay",{transition:""});
+        });
+  });*/
+</script>
+</head>
+
+<body>
+<div data-role="page" id="page_my">
+  <div data-role="header">
+    <h1>会员注册或登录</h1>
+  </div>
+
+  <div data-role="content">
+    <form method="post" action="">
+      <div data-role="fieldcontain">
+        <label for="phonenum">手机号：</label>
+        <input type="number" name="phonenum" id="phonenum" placeholder="请输入手机号"/>
+    
+        <label for="pwd">密码：</label>
+        <input type="password" name="pwd" id="pwd" placeholder="请输入密码" />
+        
+        <input type="submit" data-inline="false" value="绑定">
+      </div>
+    </form>
+  </div>
+
+  <div data-role="footer">
+  </div>
+</div> 
+</body>
+</html>

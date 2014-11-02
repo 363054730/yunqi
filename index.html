@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>xx书吧</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.4/jquery.mobile-1.4.4.css"/>
+<script src="jquery-1.11.1.js"></script>
+<script src="jquery.mobile-1.4.4/jquery.mobile-1.4.4.js"></script>
+
+<script>
+  /*$(function() {
+		//弹出付款
+        $("#paybtn").tap(function(){
+          $.mobile.changePage("#page_pay",{transition:""});
+        });
+  });*/
+</script>
+</head>
+
+<body>
+
+<div data-role="page" id="page_my">
+  <div data-role="header">
+    <h1>XX书吧</h1>
+  </div>
+
+  <div data-role="content">
+    <p>一些介绍性的文字或优惠活动等</p>
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>我的餐点</h3>
+  	    <p>以下是您的餐点信息</p>
+        <ol>
+        	<li>拿铁</li>
+            <li>提拉米苏</li>
+        </ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>我的图书</h3>
+        <p>以下是您的餐点信息</p>
+        <ol>
+        	<li>《傲慢与偏见》</li>
+            <li>《Life on the Earth》</li>
+        </ol>
+      </div>
+    </div>
+
+      	<a data-role="button" href="#page_pay" data-rel="dialog">付款</a>
+
+  </div>
+
+  <div data-role="footer">
+  	<div data-role="navbar">
+    	<ul>
+        <li><a href="#page_my" data-role="button" data-icon="user" data-transition="slide">我</a></li>
+        <li><a href="#page_shop" data-role="button" data-icon="shop" data-transition="slide">本店提供</a></li>
+        <li><a href="#page_recommend" data-role="button" data-icon="mail" data-transition="slide">征文活动</a></li>
+        </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page_shop">
+	<div data-role="header">
+    	<h1>XX书吧</h1>
+    </div>
+    
+    <div data-role="content">
+    <p>一些介绍性的文字或优惠活动等</p>
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>图书检索</h3>
+        <input type="search" name="booksearch" id="booksearch"/>
+  	    <p>图书分类列表</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>我要点餐</h3>
+        <input type="search" name="booksearch" id="booksearch"/>
+        <p>餐点分类及列表</p>
+      </div>
+    </div>
+  </div>
+  
+	<div data-role="footer">
+  		<div data-role="navbar">
+    		<ul>
+        	<li><a href="#page_my" data-role="button" data-icon="user" data-transition="slide">我</a></li>
+        	<li><a href="#page_shop" data-role="button" data-icon="shop" data-transition="slide">本店提供</a></li>
+        	<li><a href="#page_recommend" data-role="button" data-icon="mail" data-transition="slide">征文活动</a></li>
+        	</ul>
+    	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page_recommend">
+	<div data-role="header">
+    	<h1>XX书吧</h1>
+    </div>
+    
+    <div data-role="content">
+    <p>如果你有好的文章可以投稿给我们，关注新浪微博@xxx并发送私信投稿。商务合作请加QQ8888888</p>
+  	</div>
+  
+	<div data-role="footer">
+  		<div data-role="navbar">
+    		<ul>
+        	<li><a href="#page_my" data-role="button" data-icon="user" data-transition="slide">我</a></li>
+        	<li><a href="#page_shop" data-role="button" data-icon="shop" data-transition="slide">本店提供</a></li>
+        	<li><a href="#page_recommend" data-role="button" data-icon="mail" data-transition="slide">征文活动</a></li>
+        	</ul>
+    	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page_pay">
+	<div data-role="content">
+    	<form method="post" action="#page_my">
+          <div data-role="fieldcontain">
+            <input type="text" name="paymoney" id="paymoney" placeholder="请输入您的消费金额"/>
+            <input type="submit" data-inline="false" value="付款">
+          </div>
+          
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
